@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <title>Welcome to Hello World</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Sekuya&display=swap");
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="flex justify-between p-5"
+      style="font-family: 'Figtree', sans-serif"
+    >
+      <a href="/" style="font-family: 'Sekuya', sans-serif" class="text-center"
+        >Hello<br />World</a
+      >
+      <a
+        href="/login"
+        id="sign-in-button"
+        class="text-center self-center cursor-pointer"
+        >Sign In</a
+      >
+    </nav>
+    <main class="flex flex-row p-9" style="font-family: 'Figtree', sans-serif">
+      <!-- Row for filter and items -->
+      <div class="min-w-64 p-4" style="height: 600px">
+        <!-- Brand -->
+        <h1
+          class="text-xl font-bold text-gray-800 mb-3"
+          style="font-family: 'Figtree', sans-serif"
+        >
+          Brands
+        </h1>
+        <label class="flex block items-center mb-1">
+          <input
+            type="checkbox"
+            name="brand"
+            class="mr-2"
+            style="width: 18px; height: 18px"
+            value="Nike"
+          />
+          Nike
+        </label>
+        <label class="flex block items-center mb-1">
+          <input
+            type="checkbox"
+            name="brand"
+            class="mr-2"
+            style="width: 18px; height: 18px"
+            value="Adidas"
+          />
+          Adidas
+        </label>
+        <label class="flex block items-center mb-1">
+          <input
+            type="checkbox"
+            name="brand"
+            class="mr-2"
+            style="width: 18px; height: 18px"
+            value="Puma"
+          />
+          Puma
+        </label>
+        <label class="flex block items-center mb-1">
+          <input
+            type="checkbox"
+            name="brand"
+            class="mr-2"
+            style="width: 18px; height: 18px"
+            value="Under Armour"
+          />
+          Under Armour
+        </label>
+        <label class="flex block items-center mb-1">
+          <input
+            type="checkbox"
+            name="brand"
+            class="mr-2"
+            style="width: 18px; height: 18px"
+            value="New Balance"
+          />
+          New Balance
+        </label>
+        <hr class="border-t border-gray-300 my-5" />
+        <!-- Type -->
+        <h1
+          class="text-xl font-bold text-gray-800 mb-3"
+          style="font-family: 'Figtree', sans-serif"
+        >
+          Types
+        </h1>
+        <label class="flex block items-center mb-1">
+          <input
+            type="checkbox"
+            name="types"
+            class="mr-2"
+            style="width: 18px; height: 18px"
+            value="Soccer"
+          />
+          Soccer
+        </label>
+        <label class="flex block items-center mb-1">
+          <input
+            type="checkbox"
+            name="types"
+            class="mr-2"
+            style="width: 18px; height: 18px"
+            value="Running"
+          />
+          Running
+        </label>
+        <label class="flex block items-center mb-1">
+          <input
+            type="checkbox"
+            name="types"
+            class="mr-2"
+            style="width: 18px; height: 18px"
+            value="Basketball"
+          />
+          Basketball
+        </label>
+        <button
+          id="search-btn"
+          class="w-full h-12 mt-7 mb-5 border border-teal-400 rounded cursor-pointer h-8 hover:bg-black hover:text-white hover:border-black"
+          style="font-family: 'Figtree', sans-serif"
+        >
+          Apply Filter
+        </button>
+      </div>
+      <div class="w-px bg-gray-300 mx-10"></div>
+      <div class="flex flex-col">
+        <div
+          class="flex-grow grid grid-cols-3 gap-10 pr-5 overflow-auto"
+          id="render-products"
+          style="height: 670px"
+        ></div>
+        <div>
+          <button
+            id="prev-button"
+            class="px-3 mr-2 my-3 border border-teal-400 rounded-xl cursor-pointer h-8 hover:bg-black hover:text-white hover:border-black disabled:bg-gray-300 disabled:text-gray-500 disabled:border-gray-300 disabled:cursor-not-allowed"
+            disabled
+          >
+            Prev
+          </button>
+          <span
+            >Page <span id="current-page"></span> out of
+            <span id="maximum-page"></span
+          ></span>
+          <button
+            id="next-button"
+            class="px-3 ml-2 my-3 border border-teal-400 rounded-xl cursor-pointer h-8 hover:bg-black hover:text-white hover:border-black disabled:bg-gray-300 disabled:text-gray-500 disabled:border-gray-300 disabled:cursor-not-allowed"
+            disabled
+          >
+            Next
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="/js/index.js"></script>
+  </body>
+</html>

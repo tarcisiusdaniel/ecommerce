@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Detail</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Sekuya&display=swap");
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="flex justify-between p-5"
+      style="font-family: 'Figtree', sans-serif"
+    >
+      <a href="/" style="font-family: 'Sekuya', sans-serif" class="text-center"
+        >Hello<br />World</a
+      >
+      <a
+        href="/login"
+        id="sign-in-button"
+        class="text-center self-center cursor-pointer"
+        >Sign In</a
+      >
+    </nav>
+    <div
+      class="flex flex-col justify-between"
+      style="height: calc(100vh - 150px)"
+    >
+      <div class="flex h-full w-full p-20 items-center">
+        <img id="product-img" src="" alt="" />
+        <div id="product-detail" class="p-5">
+          <h1
+            class="text-xl text-gray-800 mb-1"
+            style="font-family: 'Figtree', sans-serif"
+            id="prod-name"
+          ></h1>
+          <div class="flex mb-10">
+            <div id="prod-brand" class="border rounded-xl px-3 mr-2"></div>
+            <div id="prod-type" class="border rounded-xl px-3"></div>
+          </div>
+          <p id="prod-desc" class="font-thin mb-10"></p>
+        </div>
+      </div>
+      <div class="flex-grow px-5">
+        <h1
+          class="text-4xl font-bold text-gray-800 mb-10"
+          style="font-family: 'Figtree', sans-serif"
+        >
+          Other products with the same brand
+        </h1>
+        <div
+          id="same-brands"
+          class="flex flex-row gap-10 overflow-x-auto"
+        ></div>
+      </div>
+    </div>
+
+    <!-- cards for the other brand -->
+    <script src="/js/product.js"></script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+    </style>
+  </head>
+  <body class="flex flex-col justify-center items-center w-screen h-screen">
+    <div
+      class="flex flex-row w-3xl border border-red-200 relative rounded-xl overflow-hidden shadow-xl"
+      style="height: 650px"
+    >
+      <img
+        src="/utility/nature.webp"
+        alt=""
+        class="h-full w-80 object-cover object-left overflow-hidden shrink-0"
+      />
+      <form class="flex flex-col justify-center px-20 w-full text-left">
+        <h1
+          class="text-4xl font-bold text-gray-800 mb-10"
+          style="font-family: 'Figtree', sans-serif"
+        >
+          Sign Up
+        </h1>
+        <label
+          for="username"
+          class="mb-1"
+          style="font-family: 'Figtree', sans-serif"
+        >
+          Username:
+        </label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="abcd1234"
+          class="h-10 pb-2 mb-5 border-b-2 border-teal-400 h-8 outline-none focus:border-b-2 focus:border-black"
+          style="font-family: 'Figtree', sans-serif"
+          required
+        />
+        <label
+          for="email"
+          class="mb-1"
+          style="font-family: 'Figtree', sans-serif"
+        >
+          Email:
+        </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="name@example.com"
+          class="h-10 pb-2 mb-5 border-b-2 border-teal-400 h-8 outline-none focus:border-b-2 focus:border-black"
+          style="font-family: 'Figtree', sans-serif"
+          required
+        />
+        <label
+          for="password"
+          class="mb-1"
+          style="font-family: 'Figtree', sans-serif"
+        >
+          Password:
+        </label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Your password"
+          class="h-10 pb-2 mb-5 border-b-2 border-teal-400 h-8 outline-none focus:border-b-2 focus:border-black"
+          style="font-family: 'Figtree', sans-serif"
+          required
+        />
+        <label
+          for="confirm-password"
+          class="mb-1"
+          style="font-family: 'Figtree', sans-serif"
+        >
+          Confirm Password:
+        </label>
+        <input
+          type="password"
+          name="confirmPassword"
+          id="confirm-password"
+          placeholder="Re-enter your password"
+          class="h-10 pb-2 mb-5 border-b-2 border-teal-400 h-8 outline-none focus:border-b-2 focus:border-black"
+          style="font-family: 'Figtree', sans-serif"
+          required
+        />
+        <input
+          type="submit"
+          value="Create Account"
+          class="h-12 mt-2 mb-5 border border-teal-400 rounded cursor-pointer h-8 hover:bg-black hover:text-white hover:border-black"
+          style="font-family: 'Figtree', sans-serif"
+        />
+        <span class="text-xs" style="font-family: 'Figtree', sans-serif"
+          >Already have an account?
+          <a href="login" class="text-blue-700">Login</a></span
+        >
+      </form>
+    </div>
+    <script src="js/register.js"></script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+    </style>
+  </head>
+  <body class="flex flex-col justify-center items-center w-screen h-screen">
+    <div
+      class="flex flex-row w-3xl border border-red-200 relative rounded-xl overflow-hidden shadow-xl"
+      style="height: 650px"
+    >
+      <img
+        src="/utility/nature.webp"
+        alt=""
+        class="h-full w-80 object-cover object-left overflow-hidden shrink-0"
+      />
+      <form class="flex flex-col justify-center px-20 w-full text-left">
+        <h1
+          class="text-4xl font-bold text-gray-800 mb-10"
+          style="font-family: 'Figtree', sans-serif"
+        >
+          Login
+        </h1>
+        <div class="flex flex-col">
+          <label
+            for="username-email"
+            class="mb-1"
+            style="font-family: 'Figtree', sans-serif"
+          >
+            Username/Email:
+          </label>
+          <input
+            type="text"
+            id="username-email"
+            name="username-or-email"
+            placeholder="username, name@example.com"
+            required
+            class="h-10 pb-2 mb-5 border-b-2 border-teal-400 h-8 outline-none focus:border-b-2 focus:border-black"
+            style="font-family: 'Figtree', sans-serif"
+          />
+          <label
+            for="password"
+            class="mb-1"
+            style="font-family: 'Figtree', sans-serif"
+          >
+            Password:
+          </label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+            class="h-10 pb-2 mb-5 border-b-2 border-teal-400 h-8 outline-none focus:border-b-2 focus:border-black"
+            style="font-family: 'Figtree', sans-serif"
+            required
+          />
+          <input
+            type="submit"
+            value="Login"
+            class="h-12 mt-2 mb-5 border border-teal-400 rounded cursor-pointer h-8 hover:bg-black hover:text-white hover:border-black"
+            style="font-family: 'Figtree', sans-serif"
+          />
+          <span class="text-xs" style="font-family: 'Figtree', sans-serif"
+            >Do not have an account?
+            <a href="register" class="text-blue-700">Create Account</a></span
+          >
+        </div>
+      </form>
+    </div>
+
+    <script src="js/login.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script> -->
+  </body>
+</html>
